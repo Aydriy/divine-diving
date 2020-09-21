@@ -66,12 +66,18 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    height: 20px;
     a {
       color: $nav-link;
       text-transform: uppercase;
       font-size: 15px;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       font-weight: bold;
+      transition: 0.3s;
+      height: 100%;
+      &:hover {
+        color: $nav-btn-hover;
+      }
     }
   }
 }
@@ -91,6 +97,10 @@ header {
   font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $background-btn-hover;
+  }
 }
 
 main {
